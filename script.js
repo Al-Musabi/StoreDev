@@ -12,7 +12,7 @@ function validateLoginForm()
     emailError.innerText="";
     PasswordError.innerText="";
 
-    if(email == "")
+    if(email =="")
     {
         emailError.innerText="Please Enter Your Email";
         return false;
