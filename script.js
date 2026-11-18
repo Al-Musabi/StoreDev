@@ -7,7 +7,7 @@ function validateLoginForm()
     let emailError = document.getElementById("emailError");
     let PasswordError = document.getElementById("passwordError");
 
-    let emailPatterntest="/^[^\s@]+@[^\s@]+\[^\s@]+$/~";
+    const emailPattern= /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
     emailError.innerText="";
     PasswordError.innerText="";
@@ -17,15 +17,15 @@ function validateLoginForm()
         emailError.innerText="Please Enter Your Email";
         return false;
     }
-    else if(!emailPatterntest(email))
+    else if(!emailPattern.test(email))
     {
-        emailError.innerText ="Please Enter Your Email in Correct!";
+        emailError.innerText ="Please Enter Your Email in Correct way!";
         return false;
     }
 
     if(password == "")
     {
-        passwordError.innerText = "Pleas Enter your Password";
+        PasswordError.innerText = "Pleas Enter your Password";
         return false;
     }
 
