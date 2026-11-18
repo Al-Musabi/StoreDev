@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Club Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Beginer Programming Club</h1>
+            <nav class="reg">
+                <a href="index.html">Home Page</a>
+                <a href="register.html">Create New Account</a>
+            </nav>
+    </header>
+
+    <section>
+        <form onsubmit="return validateLoginForm()">
+        
+            <p>
+                <h2>Member Login</h2>
+            </p>
+
+            <p>Please enter your credentials to access your account:</p>
+            <p>
+                <label for="email">Email Address:</label>
+                <input type="email" name="username" id="email">
+                <span id="emailError" style="color:rgb(255, 0, 0);"></span>
+            </p>
+
+            <p>
+                <label for="password">Password:</label>
+                <input type="password" name="Password" id="password">
+                <span id="passwordError" style="color:rgb(255, 0, 0);"></span>
+
+            </p>
+
+            <p>
+                <input type="submit" value="Login">
+            </p>
+
+        </form>
+    </section>
+
+    <footer>
+        <p>All rights reserved &copy; Programming Club 2026</p>
+    </footer>
+
+    <scipt src="script.js"></scipt>
+</body>
+</html>
